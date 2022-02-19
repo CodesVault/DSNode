@@ -1,0 +1,35 @@
+{
+  "type": "module",
+  "types": "src/main.ts",
+  "module": "./build/main.js",
+  "name": "dsnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run format"
+  },
+  "exports": {
+    ".": {
+      "import": "./build/main.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodesVault/DSNode.git"
+  },
+  "author": "CodesVault",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodesVault/DSNode/issues"
+  },
+  "homepage": "https://github.com/CodesVault/DSNode#readme",
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  }
+}
