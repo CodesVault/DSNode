@@ -15,3 +15,4 @@
  */
 
 export { Stack } from './stack/stack.js';
+export { Queue } from './queue/queue.js';
