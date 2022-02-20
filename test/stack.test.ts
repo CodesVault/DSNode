@@ -1,9 +1,8 @@
-// // import { Stack } from "https://deno.land/x/datastructure/mod.ts";
-// import { Stack } from "./stack.ts";
+import { Stack } from "../build/main.js";
 
-// const stack = Stack.createStack()
+const stack = Stack.createStack()
 
-// stack.push({key: 'a', value: 'apple'})
+stack.push({key: 'a', value: 'apple.'})
 // stack.push({key: 'b', value: [1, 2, 4]})
 // stack.push({key: 'c', value: [8, 9, 2]})
 // stack.push({key: 'd', value: 'dd'})
@@ -23,4 +22,4 @@
 // // }
 
 // // console.log(stack)
-// // stack.log()
+stack.log()

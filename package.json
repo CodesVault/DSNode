@@ -5,13 +5,14 @@
   "name": "dsnode",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./build/main.js",
   "scripts": {
-    "start": "tsc --watch",
-    "build": "tsc",
+    "watch": "tsc --watch",
+    "build": "tsc --build",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run format"
+    "prepublishOnly": "npm run format",
+    "test": "tsc --watch ./test/*.ts --target es2016 --module es6"
   },
   "exports": {
     ".": {
