@@ -15,6 +15,7 @@ const stack = Stack.createStack()
 stack.push({key: 'a', value: 'apple'})
 stack.push({key: 'b', value: {name: 'AbmSourav'}})
 
+// search in the stack by key
 stack.search('a');
 
 // ** create a queue
