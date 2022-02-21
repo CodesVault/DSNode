@@ -19,4 +19,5 @@ export interface QueueApi {
 	search(key: string|number): boolean|DataType<any>
 	update(key: string|number, newValue: any): boolean|DataType<any>
 	log(): void
+    iterator(): Generator
 }

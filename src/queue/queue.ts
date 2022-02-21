@@ -1,10 +1,10 @@
 import { QueueType, DataType, QueueApi } from "../types/queueTypes.js";
-import { QueueNode } from "./queueNode.js";
+import { QueueNode } from "./queueNode";
 import {
 	searchGenerator,
 	updateGenerator,
 	iteratorGenerator
-} from "./generators.js";
+} from "./generators";
 
 
 export class Queue implements QueueApi {

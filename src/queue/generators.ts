@@ -28,5 +28,5 @@ export function *iteratorGenerator(currentNode: QueueType) {
 
 		currentNode = currentNode.next
 	}
-	return false
+	yield false
 }
