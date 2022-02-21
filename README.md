@@ -39,13 +39,15 @@ while (iteratorNext.done === false) {
 
 ## List of Data Structures:
 
+* Doubly LinkedList -- **[Documentation](https://github.com/CodesVault/DSNode/tree/main/src/linkedList/doubly#doubly-linked-list-api)**
+* Singly LinkedList -- **[Documentation](https://github.com/CodesVault/DSNode/tree/main/src/linkedList/singly#singly-linked-list-api)**
 * Stack  --  **[Documentation](https://github.com/CodesVault/DSNode/tree/main/src/stack#stack-api)**
 * Queue  --  **[Documentation](https://github.com/CodesVault/DSNode/tree/main/src/queue#queue-api)**
 
 <br>
 
 ## Contribution Guidelines
-**[Wiki](https://github.com/CodesVault/DSNode/wiki/Contribution-guidelines)**
+**Developer [Wiki](https://github.com/CodesVault/DSNode/wiki/Contribution-guidelines)**
 
 <br>
 
