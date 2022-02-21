@@ -28,5 +28,5 @@ export function* iteratorGenerator(currentNode: StackType) {
 
         currentNode = currentNode.next;
     }
-    return false;
+    yield false;
 }

@@ -1,6 +1,6 @@
 import { StackType, DataType, StackApi } from '../types/stackTypes.js';
-import { StackNode } from './stackNode.js';
-import { searchGenerator, updateGenerator, iteratorGenerator } from './generators.js';
+import { StackNode } from './stackNode';
+import { searchGenerator, updateGenerator, iteratorGenerator } from './generators';
 
 export class Stack implements StackApi {
     #topNode: StackType;
@@ -107,16 +107,19 @@ export class Stack implements StackApi {
     }
 
     log() {
-        let currentNode = this.#topNode;
-        while (currentNode !== null) {
-            console.log(currentNode.data);
-            currentNode = currentNode.next;
-        }
+        console.log(JSON.stringify(this.#topNode, null, 2));
+        // let currentNode = this.#topNode;
+        // while (currentNode !== null) {
+        //     console.log(currentNode.data);
+        //     currentNode = currentNode.next;
+        // }
     }
 
     iterator() {
-        // generator function that returns an iterator
-        const iterator = iteratorGenerator(this.#topNode);
-        return iterator;
+        // if (this.#topNode !== null) {
+            // generator function that returns an iterator
+            const iterator = iteratorGenerator(this.#topNode);
+            return iterator;
+        // }
     }
 }
