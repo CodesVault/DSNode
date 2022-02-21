@@ -117,9 +117,9 @@ export class Stack implements StackApi {
 
     iterator() {
         // if (this.#topNode !== null) {
-            // generator function that returns an iterator
-            const iterator = iteratorGenerator(this.#topNode);
-            return iterator;
+        // generator function that returns an iterator
+        const iterator = iteratorGenerator(this.#topNode);
+        return iterator;
         // }
     }
 }

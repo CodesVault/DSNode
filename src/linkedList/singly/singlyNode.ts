@@ -1,8 +1,8 @@
-import { DataType, QueueType } from '../types/queueTypes.js';
+import { NodeType, DataType } from '../../types/singlyTypes.js';
 
-export class QueueNode {
+export class SinglyNode {
     public data: DataType<any>;
-    public next: QueueType | null = null;
+    public next: NodeType | null;
 
     constructor(data: DataType<any>) {
         this.data = data;

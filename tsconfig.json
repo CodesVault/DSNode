@@ -102,7 +102,7 @@
     "node_modules",
     "./node_modules",
     "./node_modules/*",
-    "src/__test",
-    "src/*/test"
+    "src/*/test",
+    "src/*/*/test"
   ]
 }

@@ -11,8 +11,10 @@
  * @sourceCode https://github.com/CodesVault/DSNode
  * @version 1.0.0
  *
- * Copyright (c) 2022 Keramot UL Islam
+ * Copyright (c) 2022 CodesVault
  */
 
 export { Stack } from './stack/stack.js';
 export { Queue } from './queue/queue.js';
+export { SinglyLinkedList } from './linkedList/singly/singlyLinkedList.js';
+export { DoublyLinkedList } from './linkedList/doubly/doublyLinkedList.js';
