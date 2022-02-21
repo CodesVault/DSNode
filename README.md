@@ -39,5 +39,5 @@ while (iteratorNext.done === false) {
 
 ## List of Data Structures:
 
-* Stack  --  **[Documentation](https://github.com/CodesVault/DSNode/tree/main/src/stack)**
-* Queue  --  **[Documentation](https://github.com/CodesVault/DSNode/tree/main/src/queue)**
+* Stack  --  **[Documentation](https://github.com/CodesVault/DSNode/tree/main/src/stack#stack-api)**
+* Queue  --  **[Documentation](https://github.com/CodesVault/DSNode/tree/main/src/queue#queue-api)**
