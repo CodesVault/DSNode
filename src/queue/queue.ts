@@ -33,6 +33,7 @@ export class Queue implements QueueApi {
             // adding same pointer for frontNode & backNode
             this.#frontNode = newNode;
             this.#backNode = newNode;
+            this.size++;
             return true;
         }
 
@@ -106,13 +107,7 @@ export class Queue implements QueueApi {
     }
 
     log() {
-        const iterator = this.iterator();
-        let iteratorNext = iterator.next();
-
-        while (iteratorNext.done === false) {
-            console.log(iteratorNext.value);
-            iteratorNext = iterator.next();
-        }
+        console.log(JSON.stringify(this.#frontNode, null, 2));
     }
 
     iterator() {

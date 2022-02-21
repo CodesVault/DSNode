@@ -1,4 +1,3 @@
-// import { Stack } from "../../build/main.js";
 import { Stack } from '../stack';
 
 describe('Stack', () => {
@@ -11,10 +10,12 @@ describe('Stack', () => {
     it('push a new element', () => {
         expect(stack.push({ key: 'a', value: 'apple' })).toBeTruthy();
         expect(stack.push({ key: 'b', value: [1, 2, 4] })).toBeTruthy();
+        expect(stack.size).toBe(2);
     });
 
     it('pop an element', () => {
         expect(stack.pop()).toEqual({ key: 'b', value: [1, 2, 4] });
+        expect(stack.size).toBe(1);
     });
 
     it('search an element', () => {

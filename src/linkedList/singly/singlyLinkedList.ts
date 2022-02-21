@@ -97,12 +97,7 @@ export class SinglyLinkedList implements SinglyLinkedListApi {
     }
 
     log() {
-        console.log(JSON.stringify(this.#head, null, 2))
-        // let currentNode = this.#head;
-        // while (currentNode !== null) {
-        //     console.log(currentNode.data);
-        //     currentNode = currentNode.next;
-        // }
+        console.log(JSON.stringify(this.#head, null, 2));
     }
 
     remove(key: string | number) {
@@ -142,7 +137,7 @@ export class SinglyLinkedList implements SinglyLinkedListApi {
     }
 
     update(key: string | number, newValue: any) {
-        if (this.#head === null) return false
+        if (this.#head === null) return false;
 
         if (this.#head.data.key === key) {
             this.#head.data.value = newValue;
@@ -165,7 +160,7 @@ export class SinglyLinkedList implements SinglyLinkedListApi {
     }
 
     search(key: string | number) {
-        if (this.#head === null) return false
+        if (this.#head === null) return false;
 
         if (this.#head.data.key === key) {
             return this.#head.data;

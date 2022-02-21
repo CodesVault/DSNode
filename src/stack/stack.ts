@@ -32,6 +32,7 @@ export class Stack implements StackApi {
         if (this.#topNode === null) {
             this.#topNode = newNode;
             this.#bottomNode = newNode;
+            this.size++;
             return true;
         }
 
@@ -61,9 +62,7 @@ export class Stack implements StackApi {
     }
 
     search(key: string | number) {
-        if (this.#topNode === null) {
-            return false;
-        }
+        if (this.#topNode === null) return false;
 
         if (key === this.#topNode!.data.key) {
             return this.#topNode!.data;
@@ -83,9 +82,7 @@ export class Stack implements StackApi {
     }
 
     update(key: string | number, newValue: any) {
-        if (this.#topNode === null) {
-            return false;
-        }
+        if (this.#topNode === null) return false;
 
         if (key === this.#topNode!.data.key) {
             this.#topNode!.data.value = newValue;
@@ -108,18 +105,10 @@ export class Stack implements StackApi {
 
     log() {
         console.log(JSON.stringify(this.#topNode, null, 2));
-        // let currentNode = this.#topNode;
-        // while (currentNode !== null) {
-        //     console.log(currentNode.data);
-        //     currentNode = currentNode.next;
-        // }
     }
 
     iterator() {
-        // if (this.#topNode !== null) {
-        // generator function that returns an iterator
         const iterator = iteratorGenerator(this.#topNode);
         return iterator;
-        // }
     }
 }

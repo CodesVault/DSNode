@@ -12,6 +12,7 @@ describe('Queue', () => {
     it('add a new elements', () => {
         expect(queue.enqueue({ key: 'a', value: 'apple' })).toBeTruthy();
         expect(queue.enqueue({ key: 'b', value: [1, 2, 4] })).toBeTruthy();
+        expect(queue.size).toBe(2);
     });
 
     it('get the first added element', () => {
@@ -29,6 +30,11 @@ describe('Queue', () => {
 
     it('update an element', () => {
         expect(queue.update('a', 'Alphabet')).toEqual({ key: 'a', value: 'Alphabet' });
+    });
+
+    it('remove a element', () => {
+        expect(queue.dequeue()).toBeTruthy();
+        expect(queue.size).toBe(2);
     });
 
     it('iterator', () => {
