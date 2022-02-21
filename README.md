@@ -34,6 +34,8 @@ while (iteratorNext.done === false) {
 }
 ```
 
+<br>
+
 ## List of Data Structures:
 
 * Stack  --  **[Documentation](https://github.com/CodesVault/DSNode/tree/main/src/stack)**
