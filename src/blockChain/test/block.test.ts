@@ -1,12 +1,12 @@
-import { BlockChain } from "../blockChain";
+import { BlockChain } from '../blockChain';
 // import { BlockChain } from "https://deno.land/x/datastructure/mod.ts";
 
 describe('SinglyLinkedList', () => {
-    const blockChain = BlockChain.createBlockChain()
+    const blockChain = BlockChain.createBlockChain();
 
     it('create a new Singly LL', () => {
         expect(blockChain).toBeTruthy();
-        expect(blockChain.createBlock({ key: 'sourav', value: "Sourav" })).toBeTruthy();
+        expect(blockChain.createBlock({ key: 'sourav', value: 'Sourav' })).toBeTruthy();
     });
 
     // blockChain.createBlock({ key: 'sourav', value: "Sourav" })
@@ -26,8 +26,7 @@ describe('SinglyLinkedList', () => {
     // blockChain.latestBlock().data.key = '1'
     // console.log(blockChain.checkValidation());
 
-    blockChain.log(null, 3)
+    blockChain.log(null, 3);
     // console.log(blockChain.search('sourav'))
     // console.log(blockChain.length)
-
 });
