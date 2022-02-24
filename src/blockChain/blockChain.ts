@@ -95,13 +95,12 @@ export class BlockChain implements BlockChainApi {
 
     log(key: null | string = null, index: null | number = null) {
         if (key) {
-            return console.log(this.search(key));
+            return console.log(JSON.stringify(this.search(key), null, 2));
         }
-
         if (index) {
-            return console.log(this.#chain[index - 1]);
+            return console.log(JSON.stringify(this.#chain[index - 1], null, 2));
         }
 
-        console.log(this.#chain);
+        console.log(JSON.stringify(this.#chain, null, 2));
     }
 }

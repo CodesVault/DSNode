@@ -1,11 +1,9 @@
-import { DataType, BlockType } from '../types/blockTypes.js';
+import { DataType } from '../types/blockTypes.js';
 import crypto from 'crypto';
 
-function blockHash(index: number, data: DataType<any>, time: Date) {
-    let hash = crypto.createHash('sha256');
-    hash = hash.update(JSON.stringify(data) + index + time);
-
-    return hash.toString();
+function blockHash(index: number, data: DataType<any>, time: Date): string {
+    let hash = crypto.createHash('sha256').update(JSON.stringify(data) + index + time);
+    return hash.digest('base64');
 }
 
 export class Block {
@@ -25,8 +23,6 @@ export class Block {
 
     regenerateHash() {
         const data: DataType<any> | any = this.data;
-        const hash = blockHash(this.index, data, this.time);
-
-        return hash.toString();
+        return blockHash(this.index, data, this.time);
     }
 }

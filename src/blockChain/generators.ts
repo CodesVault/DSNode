@@ -4,12 +4,12 @@ export function* searchGenerator(key: string, chain: Array<any>) {
             yield chain[block];
         }
     }
-    return false;
+    yield false;
 }
 
 export function* iteratorGenerator(chain: Array<any>) {
     for (let block in chain) {
         yield chain[block];
     }
-    return false;
+    yield false;
 }
