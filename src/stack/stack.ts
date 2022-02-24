@@ -81,7 +81,7 @@ export class Stack implements StackApi {
         return false;
     }
 
-    update(key: string | number, newValue: any) {
+update(key: string | number, newValue: any) {
     if (this.#topNode === null) return false;
 
         if (key === this.#topNode!.data.key) {
