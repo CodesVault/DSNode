@@ -1,5 +1,6 @@
 build
 test/*.js
+package-lock.json
 
 # Logs
 logs

@@ -18,3 +18,4 @@ export { Stack } from './stack/stack.js';
 export { Queue } from './queue/queue.js';
 export { SinglyLinkedList } from './linkedList/singly/singlyLinkedList.js';
 export { DoublyLinkedList } from './linkedList/doubly/doublyLinkedList.js';
+export { BlockChain } from './blockChain/blockChain.js';
