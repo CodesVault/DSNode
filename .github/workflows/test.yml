@@ -9,13 +9,14 @@ jobs:
       # Checkout the Repo
       - uses: actions/checkout@v2
 
-      # Install Node 12
+      # Install Node 16
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
           node-version: 16.14.0
           cache: npm
 
+      # Install npm dependencies
       - name: Install dependencies
         run: npm install
 
@@ -28,5 +29,5 @@ jobs:
         run: npm run test
 
       # Format
-      - name: Run formating
-        run: npm run format
+      - name: Run formating test
+        run: npm run format:test

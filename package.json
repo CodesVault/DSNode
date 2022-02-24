@@ -10,6 +10,7 @@
     "watch": "tsc --watch",
     "build": "tsc --build",
     "format": "prettier --write \"src/**/*.ts\"",
+    "format:test": "prettier --check \"src/**/*.ts\"",
     "prepare": "npm run build",
     "prepublishOnly": "npm run format",
     "test": "jest --coverage --config=./jest.config.js"
