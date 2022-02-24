@@ -39,6 +39,7 @@ while (iteratorNext.done === false) {
 
 ## List of Data Structures:
 
+* BlockChain -- **[Documentation](https://github.com/CodesVault/DSNode/tree/main/src/blockChain/blockChain#blockChain-api)**
 * Doubly LinkedList -- **[Documentation](https://github.com/CodesVault/DSNode/tree/main/src/linkedList/doubly#doubly-linked-list-api)**
 * Singly LinkedList -- **[Documentation](https://github.com/CodesVault/DSNode/tree/main/src/linkedList/singly#singly-linked-list-api)**
 * Stack  --  **[Documentation](https://github.com/CodesVault/DSNode/tree/main/src/stack#stack-api)**
