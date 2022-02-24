@@ -51,7 +51,7 @@ describe('Stack', () => {
 
     it('get first item added in the stack', () => {
         stack.push({ key: 'a', value: 'apple' });
-        stack.push({ key: 'b', value: [1, 2, 4] });
+        stack.push({ key: 'b', value: [1, 2, 5] });
         expect(stack.getBottom()).toEqual({ key: 'a', value: 'apple' });
     });
 });
