@@ -1,4 +1,5 @@
-import { DoublyLinkedListApi, NodeType, DataType } from '../../types/doublyTypes.js';
+import { DoublyLinkedListApi, NodeType } from '../../types/doublyTypes.js';
+import { DataType } from '../../types/dataTypes.js';
 import { DoublyNode } from './doublyNode';
 import { addGenerator, updateGenerator, searchGenerator, iteratorGenerator } from './generators';
 

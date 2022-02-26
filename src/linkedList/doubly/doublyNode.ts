@@ -1,4 +1,5 @@
-import { DataType, NodeType } from '../../types/doublyTypes.js';
+import { NodeType } from '../../types/doublyTypes.js';
+import { DataType } from '../../types/dataTypes.js';
 
 export class DoublyNode {
     public data: DataType<any>;

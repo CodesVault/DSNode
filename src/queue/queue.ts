@@ -1,4 +1,5 @@
-import { QueueType, DataType, QueueApi } from '../types/queueTypes.js';
+import { QueueType, QueueApi } from '../types/queueTypes.js';
+import { DataType } from '../types/dataTypes.js';
 import { QueueNode } from './queueNode';
 import { searchGenerator, updateGenerator, iteratorGenerator } from './generators';
 

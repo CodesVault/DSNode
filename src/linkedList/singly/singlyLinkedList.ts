@@ -1,4 +1,5 @@
-import { SinglyLinkedListApi, NodeType, DataType } from '../../types/singlyTypes.js';
+import { SinglyLinkedListApi, NodeType } from '../../types/singlyTypes.js';
+import { DataType } from '../../types/dataTypes.js';
 import { SinglyNode } from './singlyNode';
 import { addGenerator, updateGenerator, searchGenerator, iteratorGenerator } from './generators';
 

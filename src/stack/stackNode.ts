@@ -1,4 +1,5 @@
-import { DataType, StackType } from '../types/stackTypes.js';
+import { StackType } from '../types/stackTypes.js';
+import { DataType } from '../types/dataTypes.js';
 
 export class StackNode {
     public data: DataType<any>;

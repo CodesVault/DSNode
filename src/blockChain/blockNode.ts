@@ -1,4 +1,4 @@
-import { DataType } from '../types/blockTypes.js';
+import { DataType } from '../types/dataTypes.js';
 import crypto from 'crypto';
 
 function blockHash(index: number, data: DataType<any>, time: Date): string {

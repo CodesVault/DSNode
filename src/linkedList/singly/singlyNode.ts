@@ -1,4 +1,5 @@
-import { NodeType, DataType } from '../../types/singlyTypes.js';
+import { NodeType } from '../../types/singlyTypes.js';
+import { DataType } from '../../types/dataTypes.js';
 
 export class SinglyNode {
     public data: DataType<any>;

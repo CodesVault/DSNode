@@ -1,4 +1,5 @@
-import { StackType, DataType, StackApi } from '../types/stackTypes.js';
+import { StackType, StackApi } from '../types/stackTypes.js';
+import { DataType } from '../types/dataTypes.js';
 import { StackNode } from './stackNode';
 import { searchGenerator, updateGenerator, iteratorGenerator } from './generators';
 

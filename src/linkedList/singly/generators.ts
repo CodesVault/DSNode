@@ -1,4 +1,5 @@
-import { NodeType, DataType } from '../../types/singlyTypes.js';
+import { NodeType } from '../../types/singlyTypes.js';
+import { DataType } from '../../types/dataTypes.js';
 import { SinglyNode } from './singlyNode';
 
 export function* addGenerator(currentNode: NodeType, data: DataType<any>, position: number) {

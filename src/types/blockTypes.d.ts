@@ -1,8 +1,4 @@
-// data type
-export type DataType<T> = {
-    key: string;
-    value: T;
-};
+import { DataType } from './dataTypes';
 
 // BlockChain type of each block
 export type BlockType = {

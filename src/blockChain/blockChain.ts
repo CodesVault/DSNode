@@ -1,4 +1,5 @@
-import { BlockChainApi, BlockType, DataType } from '../types/blockTypes.js';
+import { BlockChainApi, BlockType } from '../types/blockTypes.js';
+import { DataType } from '../types/dataTypes.js';
 import { searchGenerator, iteratorGenerator } from './generators';
 import { Block } from './blockNode';
 
