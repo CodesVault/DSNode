@@ -49,7 +49,7 @@ search(key: string|number): object|null
 
 ## Examples
 ```ts
-import { DoublyLinkedList } from "https://deno.land/x/datastructure/mod.ts";
+import { DoublyLinkedList } from "@codesvault/dsnode";
 
 const doublyLinkedList = DoublyLinkedList.createDL()
 

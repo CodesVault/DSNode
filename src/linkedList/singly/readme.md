@@ -49,7 +49,7 @@ search(key: string|number): object|boolean
 
 ## Examples
 ```ts
-import { SinglyLinkedList } from "https://deno.land/x/datastructure/mod.ts";
+import { SinglyLinkedList } from "@codesvault/dsnode";
 
 const singlyLinkedList = SinglyLinkedList.createSL()
 

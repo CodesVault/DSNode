@@ -56,7 +56,7 @@ search(key: null|string, index: null|number = null): boolean|BlockType
 
 ## Examples
 ```ts
-import { BlockChain } from "https://deno.land/x/datastructure/mod.ts";
+import { BlockChain } from "@codesvault/dsnode";
 
 const blockChain = BlockChain.createBlockChain()
 
