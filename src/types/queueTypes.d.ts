@@ -1,4 +1,4 @@
-import { DataType } from "./dataTypes";
+import { DataType } from './dataTypes';
 
 export type QueueType = {
     data: DataType<any>;

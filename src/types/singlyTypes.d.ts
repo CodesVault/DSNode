@@ -1,4 +1,4 @@
-import { DataType } from "./dataTypes";
+import { DataType } from './dataTypes';
 
 // singly linked list node class
 export type NodeType = {
