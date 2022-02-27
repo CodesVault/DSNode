@@ -1,8 +1,4 @@
-// data type
-export type DataType<T> = {
-    key: string | number;
-    value: T;
-};
+import { DataType } from "./dataTypes";
 
 // singly linked list node class
 export type NodeType = {
