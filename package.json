@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "types": "src/main.ts",
+  "types": "./build/types/main.d.ts",
   "module": "./build/main.js",
   "name": "dsnode",
   "version": "1.0.0",
@@ -17,7 +17,8 @@
   },
   "exports": {
     ".": {
-      "import": "./build/main.js"
+      "import": "./build/main.js",
+      "types": "./build/types/main.d.js"
     }
   },
   "repository": {
@@ -39,6 +40,7 @@
     "jest": "^27.5.1",
     "prettier": "^2.5.1",
     "ts-jest": "^27.1.3",
+    "ts-node": "^10.6.0",
     "typescript": "^4.5.5"
   }
 }

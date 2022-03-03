@@ -11,6 +11,7 @@ describe('Stack', () => {
         expect(stack.push({ key: 'a', value: 'apple' })).toBeTruthy();
         expect(stack.push({ key: 'b', value: [1, 2, 4] })).toBeTruthy();
         expect(stack.size).toBe(2);
+        stack.log();
     });
 
     it('pop an element', () => {
