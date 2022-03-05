@@ -47,7 +47,7 @@ log(key?: string): void,
 
 ## Example
 ```ts
-import { HashTable } from "@codesvault/dsnode";
+import { HashTable } from "@codes.vault/dsnode";
 
 const hashTable = HashTable.createHT()
 

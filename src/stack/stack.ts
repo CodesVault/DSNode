@@ -29,6 +29,11 @@ export class Stack implements StackApi {
     }
 
     push(data: DataType<any>) {
+        if (!data.key || !data.value) {
+            console.error('Invalid data type, must be an object with `key` and `value` properties');
+            return false;
+        }
+
         const newNode = new StackNode(data);
         if (this.#topNode === null) {
             this.#topNode = newNode;

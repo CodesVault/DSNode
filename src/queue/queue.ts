@@ -29,6 +29,13 @@ export class Queue implements QueueApi {
     }
 
     enqueue(data: DataType<any>) {
+        if (!data.key || !data.value) {
+            console.error(
+                'Invalid data type, must be an object with `key` and `value` properties. Check `DataType` in documentation.',
+            );
+            return false;
+        }
+
         const newNode = new QueueNode(data);
         if (this.#frontNode === null) {
             // adding same pointer for frontNode & backNode

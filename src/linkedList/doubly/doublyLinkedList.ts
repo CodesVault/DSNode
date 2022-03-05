@@ -20,6 +20,13 @@ export class DoublyLinkedList implements DoublyLinkedListApi {
 
     // insert in the head
     prepend(data: DataType<any>) {
+        if (!data.key || !data.value) {
+            console.error(
+                'Invalid data type, must be an object with `key` and `value` properties. Check `DataType` in documentation.',
+            );
+            return false;
+        }
+
         const newNode = new DoublyNode(data);
         if (this.#head === null) {
             this.#head = newNode;
@@ -39,6 +46,13 @@ export class DoublyLinkedList implements DoublyLinkedListApi {
 
     // inset in the tail
     append(data: DataType<any>) {
+        if (!data.key || !data.value) {
+            console.error(
+                'Invalid data type, must be an object with `key` and `value` properties. Check `DataType` in documentation.',
+            );
+            return false;
+        }
+
         const newNode = new DoublyNode(data);
         if (this.#head === null) {
             this.#head = newNode;
@@ -57,6 +71,13 @@ export class DoublyLinkedList implements DoublyLinkedListApi {
 
     // // add anywhere of the linked list except head & tail
     add(data: DataType<any>, position: number) {
+        if (!data.key || !data.value) {
+            console.error(
+                'Invalid data type, must be an object with `key` and `value` properties. Check `DataType` in documentation.',
+            );
+            return false;
+        }
+
         if (position === 0 || position === 1) {
             console.error('Use `prepend()` method to insert data at Head.');
             return false;

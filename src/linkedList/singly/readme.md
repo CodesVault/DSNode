@@ -49,7 +49,7 @@ search(key: string|number): object|boolean
 
 ## Examples
 ```ts
-import { SinglyLinkedList } from "@codesvault/dsnode";
+import { SinglyLinkedList } from "@codes.vault/dsnode";
 
 const singlyLinkedList = SinglyLinkedList.createSL()
 

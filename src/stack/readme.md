@@ -44,7 +44,7 @@ log(): void;
 
 ## Example
 ```ts
-import { Stack } from "@codesvault/dsnode";
+import { Stack } from "@codes.vault/dsnode";
 
 const stack = Stack.createStack()
 

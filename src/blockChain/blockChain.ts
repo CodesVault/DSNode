@@ -17,6 +17,13 @@ export class BlockChain implements BlockChainApi {
     }
 
     createBlock(data: DataType<any>) {
+        if (!data.key || !data.value) {
+            console.error(
+                'Invalid data type, must be an object with `key` and `value` properties. Check `DataType` in documentation.',
+            );
+            return false;
+        }
+
         const newBlock = new Block(data, this.#chain.length + 1);
 
         if (this.#chain.length === 0) {

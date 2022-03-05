@@ -49,7 +49,7 @@ search(key: string|number): object|null
 
 ## Examples
 ```ts
-import { DoublyLinkedList } from "@codesvault/dsnode";
+import { DoublyLinkedList } from "@codes.vault/dsnode";
 
 const doublyLinkedList = DoublyLinkedList.createDL()
 

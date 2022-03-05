@@ -44,7 +44,7 @@ log(): void;
 
 ## Example
 ```ts
-import { Queue } from "@codesvault/dsnode";
+import { Queue } from "@codes.vault/dsnode";
 
 const queue = Queue.createQueue()
 

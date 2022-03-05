@@ -18,6 +18,13 @@ export class HashTable implements HashTableApi {
     }
 
     add(data: DataType<any>) {
+        if (!data.key || !data.value) {
+            console.error(
+                'Invalid data type, must be an object with `key` and `value` properties. Check `DataType` in documentation.',
+            );
+            return false;
+        }
+
         const index = hashFunction(data.key);
         const node = new HashNode(data);
 
