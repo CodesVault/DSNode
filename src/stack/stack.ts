@@ -1,7 +1,7 @@
 import { StackType, StackApi } from '../types/stackTypes.js';
 import { DataType } from '../types/dataTypes.js';
-import { StackNode } from './stackNode';
-import { searchGenerator, updateGenerator, iteratorGenerator } from './generators';
+import { StackNode } from './stackNode.js';
+import { searchGenerator, updateGenerator, iteratorGenerator } from './generators.js';
 
 export class Stack implements StackApi {
     #topNode: StackType;

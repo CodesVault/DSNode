@@ -4,12 +4,12 @@
  * Different Data Structures implementation API provided by this module.
  * API available in TypeScript & JavaScript.
  *
- * @package dataStructure
+ * @package dsnode
  * @author CodesVault
  * @email <keramotul.islam@gmail.com>
  * @authorUrl https://abmsourav.com
  * @sourceCode https://github.com/CodesVault/DSNode
- * @version 1.0.0
+ * @version 1.0.3
  *
  * Copyright (c) 2022 CodesVault
  */

@@ -3,7 +3,7 @@ const config = {
     "preset": 'ts-jest',
     "testEnvironment": 'node',
     "transform": {
-    '^.+\\.(ts|tsx)?$': 'ts-jest',
+    '^.+\\.(ts|js|tsx)?$': 'ts-jest',
     "^.+\\.(js|jsx)$": "babel-jest",
     }
 };

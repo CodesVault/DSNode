@@ -1,8 +1,8 @@
 import { HashTableApi } from '../types/hashTableTypes.js';
 import { DataType } from '../types/dataTypes.js';
-import { hashFunction } from './hashFunction';
-import { HashNode } from './hashNode';
-import { addGenerator, removeGenerator, updateGenerator, getGenerator, iteratorGenerator } from './generators';
+import { hashFunction } from './hashFunction.js';
+import { HashNode } from './hashNode.js';
+import { addGenerator, removeGenerator, updateGenerator, getGenerator, iteratorGenerator } from './generators.js';
 
 export class HashTable implements HashTableApi {
     #table: Array<any>;

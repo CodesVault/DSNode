@@ -1,6 +1,6 @@
 import { NodeType } from '../../types/doublyTypes.js';
 import { DataType } from '../../types/dataTypes.js';
-import { DoublyNode } from './doublyNode';
+import { DoublyNode } from './doublyNode.js';
 
 export function* addGenerator(currentNode: NodeType, data: DataType<any>, position: number) {
     let count = 0;

@@ -77,6 +77,9 @@ blockChain.createBlock({key: 'sourav', value: {name: "Sourav"}})
 blockChain.createBlock({key: 'abm', value: "AbmSourav"})
 blockChain.createBlock({key: 'JS', value: ['JS', 'TS']})
 
+// check is the hash chain is valid 
+blockChain.checkValidation()
+
 // get latest created block
 blockChain.latestBlock()
 

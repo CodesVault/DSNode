@@ -1,7 +1,7 @@
 import { QueueType, QueueApi } from '../types/queueTypes.js';
 import { DataType } from '../types/dataTypes.js';
-import { QueueNode } from './queueNode';
-import { searchGenerator, updateGenerator, iteratorGenerator } from './generators';
+import { QueueNode } from './queueNode.js';
+import { searchGenerator, updateGenerator, iteratorGenerator } from './generators.js';
 
 export class Queue implements QueueApi {
     #frontNode: QueueType;

@@ -1,7 +1,7 @@
 import { DoublyLinkedListApi, NodeType } from '../../types/doublyTypes.js';
 import { DataType } from '../../types/dataTypes.js';
-import { DoublyNode } from './doublyNode';
-import { addGenerator, updateGenerator, searchGenerator, iteratorGenerator } from './generators';
+import { DoublyNode } from './doublyNode.js';
+import { addGenerator, updateGenerator, searchGenerator, iteratorGenerator } from './generators.js';
 
 export class DoublyLinkedList implements DoublyLinkedListApi {
     #head: null | NodeType;

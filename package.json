@@ -3,7 +3,7 @@
   "types": "./build/types/main.d.ts",
   "module": "./build/main.js",
   "name": "dsnode",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "main": "./build/main.js",
   "scripts": {
@@ -31,6 +31,23 @@
     "url": "https://github.com/CodesVault/DSNode/issues"
   },
   "homepage": "https://github.com/CodesVault/DSNode#readme",
+  "keywords": [
+    "datastructure",
+    "data",
+    "ds",
+    "dsnode",
+    "nodejs",
+    "node",
+    "data structure",
+    "library",
+    "stack",
+    "queue",
+    "linkedlist",
+    "blockchain",
+    "hashtable",
+    "typescript",
+    "javascript"
+  ],
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
